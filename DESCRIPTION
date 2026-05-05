@@ -1,0 +1,6 @@
+Package: WatchSysProcessIndex
+Type: Package
+Title: WatchSysProcessIndex
+Version: 0.1.0
+License: MIT
+Description: Build an R toolkit that studies process behavior through append-only fixtures, with checkpoint recovery checks and local-only command execution.
