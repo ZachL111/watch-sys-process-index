@@ -1,0 +1,73 @@
+{
+  "repo": "watch-sys-process-index",
+  "language": "R",
+  "category": "Systems programming",
+  "goal": "Build an R toolkit that studies process behavior through append-only fixtures, with checkpoint recovery checks and local-only command execution.",
+  "review_model": {
+    "terms": [
+      "allocation pressure",
+      "dirty state",
+      "guard slack",
+      "layout drift"
+    ],
+    "lanes": [
+      "ship",
+      "watch",
+      "hold"
+    ],
+    "score": "signal * 2 + slack + confidence - drag * 3",
+    "purpose": "surface the domain-specific cases that need the most careful review"
+  },
+  "cases": [
+    {
+      "name": "baseline",
+      "focus": "allocation pressure",
+      "signal": 73,
+      "slack": 54,
+      "drag": 22,
+      "confidence": 46,
+      "score": 180,
+      "lane": "ship"
+    },
+    {
+      "name": "stress",
+      "focus": "dirty state",
+      "signal": 47,
+      "slack": 30,
+      "drag": 11,
+      "confidence": 57,
+      "score": 148,
+      "lane": "ship"
+    },
+    {
+      "name": "edge",
+      "focus": "guard slack",
+      "signal": 72,
+      "slack": 22,
+      "drag": 23,
+      "confidence": 60,
+      "score": 157,
+      "lane": "ship"
+    },
+    {
+      "name": "recovery",
+      "focus": "layout drift",
+      "signal": 77,
+      "slack": 28,
+      "drag": 31,
+      "confidence": 86,
+      "score": 175,
+      "lane": "ship"
+    },
+    {
+      "name": "stale",
+      "focus": "allocation pressure",
+      "signal": 60,
+      "slack": 24,
+      "drag": 20,
+      "confidence": 92,
+      "score": 176,
+      "lane": "ship"
+    }
+  ]
+}
