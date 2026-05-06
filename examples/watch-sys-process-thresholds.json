@@ -1,0 +1,17 @@
+{
+  "repo": "watch-sys-process-index",
+  "thresholds": {
+    "signal": 4,
+    "slack": 1,
+    "confidence": 1,
+    "drag": 5,
+    "ship": 185,
+    "watch": 114
+  },
+  "terms": [
+    "allocation pressure",
+    "dirty state",
+    "guard slack",
+    "layout drift"
+  ]
+}
